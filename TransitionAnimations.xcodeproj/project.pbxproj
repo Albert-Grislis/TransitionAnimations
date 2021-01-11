@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		1A59C6A725ACB5170043D412 /* TransitionAnimations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A59C6A525ACB5170043D412 /* TransitionAnimations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A59C6B225ACB5330043D412 /* FadeOutDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59C6AE25ACB5330043D412 /* FadeOutDismisser.swift */; };
+		1A59C6B325ACB5330043D412 /* FadeInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59C6AF25ACB5330043D412 /* FadeInPresenter.swift */; };
+		1A59C6B425ACB5330043D412 /* SlideUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59C6B025ACB5330043D412 /* SlideUpPresenter.swift */; };
+		1A59C6B525ACB5330043D412 /* SlideDownDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A59C6B125ACB5330043D412 /* SlideDownDismisser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A59C6A225ACB5170043D412 /* TransitionAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TransitionAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A59C6A525ACB5170043D412 /* TransitionAnimations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimations.h; sourceTree = "<group>"; };
 		1A59C6A625ACB5170043D412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A59C6AE25ACB5330043D412 /* FadeOutDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutDismisser.swift; sourceTree = "<group>"; };
+		1A59C6AF25ACB5330043D412 /* FadeInPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeInPresenter.swift; sourceTree = "<group>"; };
+		1A59C6B025ACB5330043D412 /* SlideUpPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideUpPresenter.swift; sourceTree = "<group>"; };
+		1A59C6B125ACB5330043D412 /* SlideDownDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownDismisser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				1A59C6A525ACB5170043D412 /* TransitionAnimations.h */,
 				1A59C6A625ACB5170043D412 /* Info.plist */,
+				1A59C6AF25ACB5330043D412 /* FadeInPresenter.swift */,
+				1A59C6AE25ACB5330043D412 /* FadeOutDismisser.swift */,
+				1A59C6B125ACB5330043D412 /* SlideDownDismisser.swift */,
+				1A59C6B025ACB5330043D412 /* SlideUpPresenter.swift */,
 			);
 			path = TransitionAnimations;
 			sourceTree = "<group>";
@@ -94,6 +106,7 @@
 				TargetAttributes = {
 					1A59C6A125ACB5170043D412 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -130,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A59C6B225ACB5330043D412 /* FadeOutDismisser.swift in Sources */,
+				1A59C6B325ACB5330043D412 /* FadeInPresenter.swift in Sources */,
+				1A59C6B425ACB5330043D412 /* SlideUpPresenter.swift in Sources */,
+				1A59C6B525ACB5330043D412 /* SlideDownDismisser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		1A59C6AB25ACB5170043D412 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 285UDA76TN;
@@ -277,6 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Albert-Grislis.TransitionAnimations";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +304,7 @@
 		1A59C6AC25ACB5170043D412 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 285UDA76TN;
